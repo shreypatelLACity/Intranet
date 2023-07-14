@@ -1,0 +1,9 @@
+html {
+  font-family: "Inter", sans-serif;
+}
+
+a[href$=".pdf"]
+{
+  background:url("assets/file-earmark-pdf-fill.svg") no-repeat left;
+  padding-left:25px;
+}

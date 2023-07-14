@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon" />
+    <title>Intranet | Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container-fluid text-center bg-body-tertiary py-2">
+      <div class="row">
+        <div class="col">
+          <small
+            >Recreation and Parks website:
+            <a href="www.laparks.org" class="text-reset"
+              >www.laparks.org</a
+            ></small
+          >
+        </div>
+        <div class="col">
+          <small
+            ><a
+              href="http://rapintra.ci.la.ca.us/dir/gm_directive/gm_directive.htm"
+              class="text-reset"
+              >General Manager Directive</a
+            ></small
+          >
+        </div>
+        <div class="col">
+          <small
+            >City of Los Angeles website:
+            <a href="www.lacity.org" class="text-reset"
+              >www.lacity.org</a
+            ></small
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid py-1">
+      <nav class="navbar">
+        <a class="navbar-brand" href="#">
+          <i class="bi bi-globe-americas"></i>
+          Intranet
+        </a>
+        <div class="d-flex">
+          <form class="justify-content-start">
+            <div
+              class="btn-group btn-outline-secondary me-2"
+              role="group"
+              aria-label="Basic example"
+            >
+              <button type="button" class="btn btn-outline-secondary">
+                Left
+              </button>
+              <button type="button" class="btn btn-outline-secondary">
+                Middle
+              </button>
+              <button type="button" class="btn btn-outline-secondary">
+                Right
+              </button>
+            </div>
+          </form>
+
+          <form role="search" class="input-group">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon"
+            >
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="https://images.pexels.com/photos/2525903/pexels-photo-2525903.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            class="d-block mx-lg-auto img-fluid rounded-5"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+            Responsive left-aligned hero with image
+          </h1>
+          <p class="lead">
+            Quickly design and customize responsive mobile-first sites with
+            Bootstrap, the world’s most popular front-end open source toolkit,
+            featuring Sass variables and mixins, responsive grid system,
+            extensive prebuilt components, and powerful JavaScript plugins.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+              Primary
+            </button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+              Default
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <ul class="nav nav-underline" id="myTab" role="tablist">
+        <li class="nav-item me-2" role="presentation">
+          <button
+            class="nav-link active"
+            id="home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#home-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="home-tab-pane"
+            aria-selected="true"
+          >
+            <i class="bi bi-folder me-2"></i>Directory
+          </button>
+        </li>
+        <li class="nav-item me-2" role="presentation">
+          <button
+            class="nav-link"
+            id="profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#profile-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="profile-tab-pane"
+            aria-selected="false"
+          >
+            <i class="bi bi-card-checklist me-2"></i>Applications
+          </button>
+        </li>
+        <li class="nav-item me-2" role="presentation">
+          <button
+            class="nav-link"
+            id="contact-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#contact-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="contact-tab-pane"
+            aria-selected="false"
+          >
+            <i class="bi bi-file-earmark-pdf me-2"></i>eForms
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content bg-body-secondary" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="home-tab-pane"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+          tabindex="0"
+        >
+          <table class="table table-sm table-borderless table-striped">
+            <tbody>
+              <tr>
+                <td><a href="" class="link-dark">Operation Branch</a></td>
+                <td><a href="" class="link-dark">Operation Branch</a></td>
+                <td><a href="" class="link-dark">Operation Branch</a></td>
+              </tr>
+              <tr>
+                <td><a href="" class="link-dark">Operation Branch</a></td>
+                <td><a href="" class="link-dark">Operation Branch</a></td>
+                <td><a href="" class="link-dark">Operation Branch</a></td>
+              </tr>
+              <tr>
+                <td><a href="" class="link-dark">Operation Branch</a></td>
+                <td><a href="" class="link-dark">Operation Branch</a></td>
+                <td><a href="" class="link-dark">Operation Branch</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="profile-tab-pane"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+          tabindex="0"
+        >
+          <table class="table table-sm table-borderless table-striped">
+            <tbody>
+              <tr>
+                <td><a href="" class="link-dark">Operation Branch</a></td>
+                <td><a href="" class="link-dark">Operation Branch</a></td>
+                <td><a href="" class="link-dark">Operation Branch</a></td>
+              </tr>
+              <tr>
+                <td><a href="" class="link-dark">Operation Branch</a></td>
+                <td><a href="" class="link-dark">Operation Branch</a></td>
+                <td><a href="" class="link-dark">Operation Branch</a></td>
+              </tr>
+              <tr>
+                <td><a href="" class="link-dark">Operation Branch</a></td>
+                <td><a href="" class="link-dark">Operation Branch</a></td>
+                <td><a href="" class="link-dark">Operation Branch</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="contact-tab-pane"
+          role="tabpanel"
+          aria-labelledby="contact-tab"
+          tabindex="0"
+        >
+          <table class="table table-borderless table-striped">
+            <tbody>
+              <tr>
+                <td><a href=".pdf" class="link-dark me-2">Operation Branch</a></td>
+                <td><a href="" class="link-dark">Operation Branch</a></td>
+                <td><a href="" class="link-dark">Operation Branch</a></td>
+              </tr>
+              <tr>
+                <td><a href="" class="link-dark">Operation Branch</a></td>
+                <td><a href="" class="link-dark">Operation Branch</a></td>
+                <td><a href="" class="link-dark">Operation Branch</a></td>
+              </tr>
+              <tr>
+                <td><a href="" class="link-dark">Operation Branch</a></td>
+                <td><a href="" class="link-dark">Operation Branch</a></td>
+                <td><a href="" class="link-dark">Operation Branch</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
