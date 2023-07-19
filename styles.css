@@ -1,9 +1,22 @@
-html {
+body{
   font-family: "Inter", sans-serif;
+  /* background-image: url('assets/stacked-waves-haikei.svg');
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  */
 }
 
-a[href$=".pdf"]
-{
-  background:url("assets/file-earmark-pdf-fill.svg") no-repeat left;
-  padding-left:25px;
+a[href$=".pdf"] {
+  background: url("assets/file-earmark-pdf-fill.svg") no-repeat left;
+  padding-left: 25px;
+}
+
+.link-hover {
+  text-decoration: none;
+  color: #343a40;
+}
+.link-hover:hover{
+  text-decoration: underline;
+  color:black;
 }
