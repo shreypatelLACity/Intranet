@@ -8,3 +8,9 @@ a[href$=".pdf"]
   padding-left:25px;
 }
 
+.GTDtitle {
+  color: white;
+  background-color: #E86749;
+  padding-bottom: 5px;
+  border-radius: 10px;
+}
