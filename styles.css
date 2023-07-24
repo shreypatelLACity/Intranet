@@ -18,5 +18,12 @@ a[href$=".pdf"] {
 }
 .link-hover:hover{
   text-decoration: underline;
-  color:black;
+  color:#ff5029;
+}
+
+.link-orange{
+  color: #E96648;
+}
+.link-orange:hover{
+  color: #ff5029;
 }
