@@ -14,3 +14,9 @@ a[href$=".pdf"]
   padding-bottom: 5px;
   border-radius: 10px;
 }
+
+.table-alpha{
+  color: white;
+  background-color: #E86749;
+}
+
