@@ -3,44 +3,120 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon" />
+    <title>Intranet | Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles2.css" />
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-2 mt-3">
-          <div class="flex-shrink-0 p-3 bg-body-tertiary rounded-2">
-            <a
-              href="/"
-              class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom"
+    <div class="container-fluid bg-body-tertiary py-2">
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <small
+            >Recreation and Parks website:
+            <a href="www.laparks.org" class="text-reset"
+              >www.laparks.org</a
+            ></small
+          >
+        </div>
+        <div class="col-sm-4">
+          <small
+            ><a
+              href="http://rapintra.ci.la.ca.us/dir/gm_directive/gm_directive.htm"
+              class="text-reset"
+              >General Manager Directive</a
+            ></small
+          >
+        </div>
+        <div class="col-sm-4">
+          <small
+            >City of Los Angeles website:
+            <a href="www.lacity.org" class="text-reset"
+              >www.lacity.org</a
+            ></small
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-1">
+      <nav class="navbar">
+        <a class="navbar-brand" href="index.html">
+          <i class="bi bi-globe-americas me-1"></i>
+          Recreation and Parks Intranet
+        </a>
+        <div class="d-flex">
+          <form class="justify-content-start">
+            <div
+              class="btn-group btn-outline-dark me-2"
+              role="group"
+              aria-label="Basic example"
             >
-              <svg class="bi pe-none me-2" width="30" height="24">
-                <use xlink:href="#bootstrap"></use>
-              </svg>
-              <span class="fs-5 fw-semibold">Collapsible</span>
-            </a>
+              <button type="button" class="btn btn-outline-dark d-inline-flex">
+                <i class="bi bi-headset me-2"></i>Support
+              </button>
+              <button type="button" class="btn btn-outline-dark d-inline-flex">
+                <i class="bi bi-tools me-2"></i>
+                CSR
+              </button>
+              <button type="button" class="btn btn-outline-dark d-inline-flex">
+                <i class="bi bi-envelope-fill me-2"></i>
+                Mail
+              </button>
+            </div>
+          </form>
+
+          <form role="search" class="input-group">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-dark"
+              type="button"
+              id="button-addon"
+            >
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-sm-3">
+          <div class="p-3 border rounded-4">
             <ul class="list-unstyled ps-0">
               <li class="mb-1">
                 <button
                   class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
                   data-bs-toggle="collapse"
                   data-bs-target="#home-collapse"
-                  aria-expanded="false"
+                  aria-expanded="true"
                 >
                   Home
                 </button>
-                <div class="collapse" id="home-collapse" style="">
+                <div class="collapse show" id="home-collapse">
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                     <li>
                       <a
@@ -150,553 +226,696 @@
                   </ul>
                 </div>
               </li>
-              <li class="border-top my-3"></li>
-              <li class="mb-1">
-                <button
-                  class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#account-collapse"
-                  aria-expanded="false"
-                >
-                  Account
-                </button>
-                <div class="collapse" id="account-collapse">
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li>
-                      <a
-                        href="#"
-                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
-                        >New...</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
-                        >Profile</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
-                        >Settings</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
-                        >Sign out</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </li>
             </ul>
           </div>
         </div>
-        <div class="col-10 mt-3 bg-body-tertiary rounded-2">
-          <div class="container-fluid py-3" id="custom-cards">
-            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4">
-              <div class="col">
-                <div
-                  class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                  style="
-                    background-image: url('assets/pexels-photo-2525903.jpeg');
-                  "
-                >
-                  <div
-                    class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
-                  >
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                      City of LA Personnel
-                    </h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                      <li class="me-auto">
-                        <img
-                          src="https://griffithobservatory.org/wp-content/uploads/2021/01/logo_la.png"
-                          alt="Bootstrap"
-                          width="32"
-                          height="32"
-                          class="rounded-circle"
-                        />
-                      </li>
 
-                      <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em">
-                          <use xlink:href="#calendar3"></use>
-                        </svg>
-                        <small>June 2, 2023</small>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+        <div class="col-sm-9">
+          <div class=" border rounded-4">
+            <div
+              class="d-flex justify-content-around align-items-center border-bottom"
+            >
+              <div class="p-2">
+                <h5 class="m-0">General Telephone Directory</h5>
               </div>
-
-              <div class="col">
-                <div
-                  class="card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                  style="
-                    background-image: url('assets/pexels-photo-2525903.jpeg');
-                  "
-                >
-                  <div
-                    class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
-                  >
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                      Information Regarding the Griffith Park
-                    </h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                      <li class="me-auto">
-                        <img
-                          src="assets/LAParks_Logo.png"
-                          alt="Bootstrap"
-                          width="32"
-                          height="32"
-                          class="rounded-circle"
-                        />
-                      </li>
-                      <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em">
-                          <use xlink:href="#calendar3"></use>
-                        </svg>
-                        <small>July 2, 2023</small>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div
-                  class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                  style="
-                    background-image: url('assets/pexels-photo-2525903.jpeg');
-                  "
-                >
-                  <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                      MBE/WBE and Other Business
-                    </h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                      <li class="me-auto">
-                        <img
-                          src="assets/LAParks_Logo.png"
-                          alt="Bootstrap"
-                          width="32"
-                          height="32"
-                          class="rounded-circle"
-                        />
-                      </li>
-                      <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em">
-                          <use xlink:href="#calendar3"></use>
-                        </svg>
-                        <small>July 15, 2023</small>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+              <div class="p-2">
+                <form role="search" class="input-group">
+                  <input
+                    class="form-control"
+                    id="myInput"
+                    type="text"
+                    placeholder="Filter..."
+                    aria-label="Search"
+                  />
+                </form>
               </div>
             </div>
-          </div>
 
-          <div class="container py-2 mt-5">
-            <ul class="nav nav-underline" id="myTab" role="tablist">
-              <li class="nav-item me-2" role="presentation">
-                <button
-                  class="nav-link link-orange active"
-                  id="home-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#home-tab-pane"
-                  type="button"
-                  role="tab"
-                  aria-controls="home-tab-pane"
-                  aria-selected="true"
-                >
-                  <i class="bi bi-folder2-open me-2"></i>Directory
-                </button>
-              </li>
-              <li class="nav-item me-2" role="presentation">
-                <button
-                  class="nav-link link-orange"
-                  id="profile-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#profile-tab-pane"
-                  type="button"
-                  role="tab"
-                  aria-controls="profile-tab-pane"
-                  aria-selected="false"
-                >
-                  <i class="bi bi-card-checklist me-2"></i>Applications
-                </button>
-              </li>
-              <li class="nav-item me-2" role="presentation">
-                <button
-                  class="nav-link link-orange"
-                  id="contact-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#contact-tab-pane"
-                  type="button"
-                  role="tab"
-                  aria-controls="contact-tab-pane"
-                  aria-selected="false"
-                >
-                  <i class="bi bi-file-earmark-pdf me-2"></i>eForms
-                </button>
-              </li>
-              <li class="nav-item me-2" role="presentation">
-                <button
-                  class="nav-link link-orange"
-                  id="contact-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#contact-tab-pane"
-                  type="button"
-                  role="tab"
-                  aria-controls="contact-tab-pane"
-                  aria-selected="false"
-                >
-                  <i class="bi bi-info-circle me-2"></i>Information
-                </button>
-              </li>
-              <li class="nav-item me-2" role="presentation">
-                <button
-                  class="nav-link link-orange"
-                  id="contact-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#contact-tab-pane"
-                  type="button"
-                  role="tab"
-                  aria-controls="contact-tab-pane"
-                  aria-selected="false"
-                >
-                  <i class="bi bi-file-binary me-2"></i>Codes
-                </button>
-              </li>
-              <li class="nav-item me-2" role="presentation">
-                <button
-                  class="nav-link link-orange"
-                  id="contact-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#contact-tab-pane"
-                  type="button"
-                  role="tab"
-                  aria-controls="contact-tab-pane"
-                  aria-selected="false"
-                >
-                  <i class="bi bi-people me-2"></i>Human Resources
-                </button>
-              </li>
-              <li class="nav-item me-2" role="presentation">
-                <button
-                  class="nav-link link-orange"
-                  id="contact-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#contact-tab-pane"
-                  type="button"
-                  role="tab"
-                  aria-controls="contact-tab-pane"
-                  aria-selected="false"
-                >
-                  <i class="bi bi-laptop me-2"></i>New Website Review
-                </button>
-              </li>
-            </ul>
-            <div class="tab-content bg-body-secondary" id="myTabContent">
-              <div
-                class="tab-pane fade show active"
-                id="home-tab-pane"
-                role="tabpanel"
-                aria-labelledby="home-tab"
-                tabindex="0"
-              >
-                <table class="table table-borderless table-striped">
-                  <tbody>
-                    <tr>
-                      <td>
-                        <a href="directory.html" class="link-dark"
-                          >General Telephone Directory</a
-                        >
-                      </td>
-                      <td><a href="" class="link-dark">Operation Branch</a></td>
-                      <td><a href="" class="link-dark">Operation Branch</a></td>
-                    </tr>
-                    <tr>
-                      <td><a href="" class="link-dark">Operation Branch</a></td>
-                      <td><a href="" class="link-dark">Operation Branch</a></td>
-                      <td><a href="" class="link-dark">Operation Branch</a></td>
-                    </tr>
-                    <tr>
-                      <td><a href="" class="link-dark">Operation Branch</a></td>
-                      <td><a href="" class="link-dark">Operation Branch</a></td>
-                      <td><a href="" class="link-dark">Operation Branch</a></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="profile-tab-pane"
-                role="tabpanel"
-                aria-labelledby="profile-tab"
-                tabindex="0"
-              >
-                <table class="table table-borderless table-striped">
-                  <tbody>
-                    <tr>
-                      <td><a href="" class="link-dark">Operation Branch</a></td>
-                      <td><a href="" class="link-dark">Operation Branch</a></td>
-                      <td><a href="" class="link-dark">Operation Branch</a></td>
-                    </tr>
-                    <tr>
-                      <td><a href="" class="link-dark">Operation Branch</a></td>
-                      <td><a href="" class="link-dark">Operation Branch</a></td>
-                      <td><a href="" class="link-dark">Operation Branch</a></td>
-                    </tr>
-                    <tr>
-                      <td><a href="" class="link-dark">Operation Branch</a></td>
-                      <td><a href="" class="link-dark">Operation Branch</a></td>
-                      <td><a href="" class="link-dark">Operation Branch</a></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="contact-tab-pane"
-                role="tabpanel"
-                aria-labelledby="contact-tab"
-                tabindex="0"
-              >
-                <table class="table table-borderless table-striped">
-                  <tbody>
-                    <tr>
-                      <td>
-                        <a href=".pdf" class="link-dark me-2"
-                          >Operation Branch</a
-                        >
-                      </td>
-                      <td>
-                        <a href=".pdf" class="link-dark me-2"
-                          >Operation Branch</a
-                        >
-                      </td>
-                      <td>
-                        <a href=".pdf" class="link-dark me-2"
-                          >Operation Branch</a
-                        >
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <a href=".pdf" class="link-dark me-2"
-                          >Operation Branch</a
-                        >
-                      </td>
-                      <td>
-                        <a href=".pdf" class="link-dark me-2"
-                          >Operation Branch</a
-                        >
-                      </td>
-                      <td>
-                        <a href=".pdf" class="link-dark me-2"
-                          >Operation Branch</a
-                        >
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <a href=".pdf" class="link-dark me-2"
-                          >Operation Branch</a
-                        >
-                      </td>
-                      <td>
-                        <a href=".pdf" class="link-dark me-2"
-                          >Operation Branch</a
-                        >
-                      </td>
-                      <td>
-                        <a href=".pdf" class="link-dark me-2"
-                          >Operation Branch</a
-                        >
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Department Services</th>
+                  <th scope="col">Telephone</th>
+                </tr>
+              </thead>
+              <tbody class="table-group-divider" id="myTable">
+                <tr>
+                  <td><a href="#" target="_blank">Accounting</a></td>
+                  <td>(213) 202-4380</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="figueroa/15Floor/applications.htm">Applications</a>
+                  </td>
+                  <td>(213) 202-3280</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="operationswest/westregion/aquatics.htm"
+                      >Aquatics</a
+                    >
+                  </td>
+                  <td>(323) 906-7953</td>
+                </tr>
+                <tr>
+                  <td><a href="figueroa/2ndFloor/auditing.htm">Auditing</a></td>
+                  <td>(213) 202-4343</td>
+                </tr>
 
-          <div class="container py-5">
-            <div class="row">
-              <div class="card-group">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Important Links</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">
-                      Card subtitle
-                    </h6>
-                    <div class="card-text">
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                          <a href="" class="link-hover"
-                            >Accounting & Purchase</a
-                          >
-                        </li>
-                        <li class="list-group-item">
-                          <a href="" class="link-hover"
-                            >Accounting & Purchase</a
-                          >
-                        </li>
-                        <li class="list-group-item">
-                          <a href="" class="link-hover"
-                            >Accounting & Purchase</a
-                          >
-                        </li>
-                        <li class="list-group-item">
-                          <a href="" class="link-hover"
-                            >Accounting & Purchase</a
-                          >
-                        </li>
-                        <li class="list-group-item">
-                          <a href="" class="link-hover"
-                            >Accounting & Purchase</a
-                          >
-                        </li>
-                        <li class="list-group-item">
-                          <a href="" class="link-hover"
-                            >Accounting & Purchase</a
-                          >
-                        </li>
-                        <li class="list-group-item">
-                          <a href="" class="link-hover"
-                            >Accounting & Purchase</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Mainframe Support</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">
-                      Card subtitle
-                    </h6>
-                    <div class="card-text">
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                          <a href="" class="link-hover"
-                            >Accounting & Purchase</a
-                          >
-                        </li>
-                        <li class="list-group-item">
-                          <a href="" class="link-hover"
-                            >Accounting & Purchase</a
-                          >
-                        </li>
-                        <li class="list-group-item">
-                          <a href="" class="link-hover"
-                            >Accounting & Purchase</a
-                          >
-                        </li>
-                        <li class="list-group-item">
-                          <a href="" class="link-hover"
-                            >Accounting & Purchase</a
-                          >
-                        </li>
-                        <li class="list-group-item">
-                          <a href="" class="link-hover"
-                            >Accounting & Purchase</a
-                          >
-                        </li>
-                        <li class="list-group-item">
-                          <a href="" class="link-hover"
-                            >Accounting & Purchase</a
-                          >
-                        </li>
-                        <li class="list-group-item">
-                          <a href="" class="link-hover"
-                            >Accounting & Purchase</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+                <tr>
+                  <td><a href="figueroa/2ndFloor/budget.htm">Budget</a></td>
+                  <td>(213) 202-4380</td>
+                </tr>
 
-          <div class="container">
-            <div class="bg-body-tertiary p-5 rounded-4">
-              <div class="d-flex flex-wrap flex-row mb-3">
-                <div class="p-1">
-                  <img
-                    src="assets/Images/rapoperations.jpg"
-                    class="rounded-3 object-fit-cover"
-                    height="100"
-                  />
-                </div>
-                <div class="p-1">
-                  <img
-                    src="assets/Images/KYCommunity.jpg"
-                    class="rounded-3 object-fit-cover"
-                    height="100"
-                  />
-                </div>
-                <div class="p-1">
-                  <img
-                    src="assets/Images/comments.jpg"
-                    class="rounded-3 object-fit-cover"
-                    height="100"
-                  />
-                </div>
-                <div class="p-1">
-                  <img
-                    src="assets/Images/SRS.jpg"
-                    class="rounded-3 object-fit-cover"
-                    height="100"
-                  />
-                </div>
-                <div class="p-1">
-                  <img
-                    src="assets/Images/manual.jpg"
-                    class="rounded-3 object-fit-cover"
-                    height="100"
-                  />
-                </div>
-                <div class="p-1">
-                  <img
-                    src="assets/Images/hiringPacket.jpg"
-                    class="rounded-3 object-fit-cover"
-                    height="100"
-                  />
-                </div>
-                <div class="p-1">
-                  <img
-                    src="assets/Images/safety.jpg"
-                    class="rounded-3 object-fit-cover"
-                    height="100"
-                  />
-                </div>
-                <div class="p-1">
-                  <img
-                    src="assets/Images/cornerstone.png"
-                    class="rounded-3 object-fit-cover"
-                    height="100"
-                  />
-                </div>
-              </div>
-            </div>
+                <tr>
+                  <td>
+                    <a href="operationswest/valleyregion/camping.htm">Camps</a>
+                  </td>
+                  <td>(213) 485-4853</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="administration/purchasingsupp.htm"
+                      >Central Stores</a
+                    >
+                  </td>
+                  <td>(213) 485-4822</td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <a href="operationswest/westregion/childcare.htm"
+                        >Child Care<br /></a
+                      ><a href="../pdf/childCare_parentHandbook,pdf.pdf"
+                        >Parent Handbook for Child Care Program</a
+                      >
+                    </p>
+                  </td>
+                  <td>(818) 246-1699</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="administration/equipmentdivision.htm"
+                      >Citywide Equipment</a
+                    >
+                  </td>
+                  <td>(213) 485-6821</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="operationseast/classparks.htm">CLASS Parks</a>
+                  </td>
+                  <td>(818) 243-2490</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="figueroa/15Floor/commissioners.htm"
+                      >Commission Office</a
+                    >
+                  </td>
+                  <td>(213) 202-2640</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="administration/concessions.htm">Concessions</a>
+                  </td>
+                  <td>(213) 202-3280</td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <strong
+                      ><a name="construction"></a>Construction Division</strong
+                    ><br />
+                    <a href="../pdf/jobOrderCont.pdf"
+                      >Job Order Contact Information</a
+                    >
+                    <br />
+                    <a href="../pdf/jobOrderCons.pdf"
+                      >Consolidation/Mobile App Memo</a
+                    >
+                    <br />
+                    <a href="../pdf/jobOrderRequest.pdf"
+                      >Job Order Request Form</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    &nbsp;•&nbsp;<a
+                      href="operationseast/griffithMetro/facilityrepair.htm"
+                      >Joseph Mendoza</a
+                    >, Valley/West
+                  </td>
+                  <td>(213) 485-4808</td>
+                </tr>
+                <tr>
+                  <td>
+                    &nbsp;•&nbsp;<a
+                      href="operationswest/westregion/facilityrepair.htm"
+                      >Rodney Nisperos</a
+                    >, Metro/Pacific
+                  </td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>
+                    &nbsp;•&nbsp;<a
+                      href="operationseast/citywidefacilityrepair.htm"
+                      >John Kolody</a
+                    >, Play Equipment/Roofing
+                  </td>
+                  <td>(213) 485-4801</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <a href="figueroa/1stFloor/environmental.htm"
+                      >Environmental</a
+                    >
+                  </td>
+                  <td>(213) 202-2660</td>
+                </tr>
+                <tr>
+                  <td valign="top">
+                    <a href="figueroa/7thFloor/emergencyPreparedness.htm"
+                      >Emergency Prepraredness</a
+                    >
+                  </td>
+                  <td valign="top">(818) 291-9983</td>
+                </tr>
+                <tr>
+                  <td valign="top">
+                    <a href="operationseast/epicc.htm">EXPO</a>
+                  </td>
+                  <td valign="top">(213) 763-0114</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="administration/equipmentdivision.htm"
+                      >Equipment Repair</a
+                    >
+                  </td>
+                  <td>(213) 485-6819</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="figueroa/15Floor/executiveOff.htm"
+                      >Executive Office</a
+                    >
+                  </td>
+                  <td>(213) 202-2633</td>
+                </tr>
+
+                <tr>
+                  <td>Fleet Services (CSY)</td>
+                  <td>(213) 847-0607</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="operationswest/westregion/foodprogram.htm"
+                      >Food Program</a
+                    >
+                  </td>
+                  <td>(818) 546-2383</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="operationswest/valleyregion/forestry.htm"
+                      >Forestry</a
+                    >
+                  </td>
+                  <td>(213) 485-4826</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <a href="figueroa/2ndFloor/generalAcctg.htm"
+                      >General Accounting</a
+                    >
+                  </td>
+                  <td>(213) 202-4394</td>
+                </tr>
+                <tr>
+                  <td><a href="operationseast/golf.htm">Golf</a></td>
+                  <td>(818) 246-1135</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="figueroa/2ndFloor/grantsAcctg.htm"
+                      >Grants Accounting</a
+                    >
+                  </td>
+                  <td>(213) 202-4370</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="figueroa/2ndFloor/grantsAdm.htm"
+                      >Grants Administration</a
+                    >
+                  </td>
+                  <td>(213) 202-4391</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="operationseast/observatory.htm"
+                      >Griffith Observatory
+                    </a>
+                  </td>
+                  <td>(323) 664-1181</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="operationseast/griffithMetro/pkMaintGriffith.htm"
+                      >Griffith Park Maintenance</a
+                    >
+                  </td>
+                  <td>(818) 243-1145</td>
+                </tr>
+                <tr>
+                  <td>Griffith Nursery</td>
+                  <td>(323) 664-1407</td>
+                </tr>
+
+                <tr>
+                  <td><a href="http://10.88.3.208/index.jsp">Help Desk</a></td>
+                  <td>(213) 202-4300</td>
+                </tr>
+                <tr>
+                  <td><a href="../dir/hr/hr.htm">Human Resources</a></td>
+                  <td>(213) 202-3222</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="http://rapintra/pdf/JOFactSheet.pdf">Job Orders</a>
+                  </td>
+                  <td>(213) 847-1336</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <a href="operationswest/westregion/lakids.htm"
+                      >L.A. Kids Program</a
+                    >
+                  </td>
+                  <td>(213) 485-4841</td>
+                </tr>
+                <tr>
+                  <td>Los Angeles Zoo</td>
+                  <td>(323) 644-6400</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <a href="figueroa/2ndFloor/mrpAcctg.htm">MRP Accounting </a>
+                  </td>
+                  <td>(213) 202-4377</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="operationswest/westregion/munisports.htm"
+                      >Municipal Sports</a
+                    >
+                  </td>
+                  <td>(818) 246-5613</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="operationseast/pacificregion/museum&amp;aqu.htm"
+                      >Museums and Aquarium</a
+                    >
+                  </td>
+                  <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <a
+                      href="operationseast/griffithMetro/parkservices.htm#parkFilmOff"
+                      >Park Film Office</a
+                    >
+                  </td>
+                  <td>(323) 644-6220</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="operationseast/griffithMetro/pkMaintCentral.htm"
+                      >Park Maintenance</a
+                    >
+                  </td>
+                  <td>(213) 485-5572</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="operationswest/westregion/parkranger.htm"
+                      >Park Rangers</a
+                    >
+                  </td>
+                  <td>(323) 913-4688</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="operationseast/griffithMetro/parkservices.htm"
+                      >Park Services</a
+                    >
+                  </td>
+                  <td>(323) 321-6115</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="operationseast/partnership.htm">Partnerships</a>
+                  </td>
+                  <td>(213) 202-5600</td>
+                </tr>
+                <tr>
+                  <td><a href="figueroa/7thFloor/payroll.htm">Payroll</a></td>
+                  <td>(213) 202-3255</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="operationseast/pershing.htm">Pershing Square</a>
+                  </td>
+                  <td>(213) 847-4969</td>
+                </tr>
+                <tr>
+                  <td><a href="../dir/hr/hr.htm">Personnel</a></td>
+                  <td>(213) 202-3222</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="figueroa/1stFloor/planningConst.htm"
+                      >Planning and Construction</a
+                    >
+                  </td>
+                  <td>(213) 202-2681</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="figueroa/7thFloor/publicInfo.htm"
+                      >Public Information</a
+                    >
+                  </td>
+                  <td>(213) 202-2700</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="figueroa/7thFloor/publicInfo.htm">Publishing</a>
+                  </td>
+                  <td>(818) 243-1025</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="administration/purchasingsupp.htm"
+                      >Purchasing Support</a
+                    >
+                  </td>
+                  <td>(213) 485-4822</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <a href="figueroa/1stFloor/realestate.htm">Real Estate</a>
+                  </td>
+                  <td>(213) 202-2608</td>
+                </tr>
+                <tr>
+                  <td><strong>Recreation Divisions:</strong></td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>
+                    &nbsp;•&nbsp;<a
+                      href="operationseast/griffithMetro/centralDist.htm"
+                      >Central District Area</a
+                    >
+                  </td>
+                  <td>(213) 485-8745</td>
+                </tr>
+                <tr>
+                  <td>
+                    &nbsp;•&nbsp;<a
+                      href="operationseast/griffithMetro/eastDist.htm"
+                      >East District Area</a
+                    >
+                  </td>
+                  <td>(213) 485-8743</td>
+                </tr>
+                <tr>
+                  <td>
+                    &nbsp;•&nbsp;<a
+                      href="operationseast/griffithMetro/griffithDist.htm"
+                      >Griffith District Area</a
+                    >
+                  </td>
+                  <td>(213) 485-1310</td>
+                </tr>
+                <tr>
+                  <td>
+                    &nbsp;•&nbsp;<a
+                      href="operationseast/griffithMetro/northDist.htm"
+                      >North District Area</a
+                    >
+                  </td>
+                  <td>(213) 485-4876</td>
+                </tr>
+                <tr>
+                  <td>
+                    &nbsp;•&nbsp;<a
+                      href="operationseast/pacificregion/harbordist.htm"
+                      >Harbor District Area</a
+                    >
+                  </td>
+                  <td>(310) 548-7401</td>
+                </tr>
+                <!-- <tr>
+              
+              <td>&nbsp;&bull;&nbsp;<a href="operationswest/westregion/shorelinedistrictrc.htm">Shoreline District Area</a></td>
+              <td >(310) 202-2803</td>
+          </tr> -->
+                <tr>
+                  <td>
+                    &nbsp;•&nbsp;<a
+                      href="operationseast/pacificregion/southdist.htm"
+                      >South District Area</a
+                    >
+                  </td>
+                  <td>(213) 346-7392</td>
+                </tr>
+                <tr>
+                  <td>
+                    &nbsp;•&nbsp;<a
+                      href="operationswest/valleyregion/midvalleyarea.htm"
+                      >Mid Valley District Area</a
+                    >
+                  </td>
+                  <td>(818) 756-8616</td>
+                </tr>
+                <tr>
+                  <td>
+                    &nbsp;•&nbsp;<a
+                      href="operationswest/valleyregion/eastvalleyarea.htm"
+                      >East Valley District Area</a
+                    >
+                  </td>
+                  <td>(818) 756-8060</td>
+                </tr>
+                <!-- <tr>
+              
+              <td>&nbsp;&bull; <a href="operationswest/valleyregion/valleyshoreline.htm">Valley Shoreline District Area</a></td>
+              <td >(818) 756-8060</td>
+          </tr> -->
+                <tr>
+                  <td>
+                    &nbsp;•&nbsp;<a
+                      href="operationswest/valleyregion/westvalleyarea.htm"
+                      >West Valley District Area</a
+                    >
+                  </td>
+                  <td>(818) 756-8060</td>
+                </tr>
+                <tr>
+                  <td>
+                    &nbsp;•&nbsp;<a
+                      href="operationswest/valleyregion/municipalsports-camps-GPLA.htm"
+                      >South Valley District Area</a
+                    >
+                  </td>
+                  <td>(818) 756-8188</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="figueroa/2ndFloor/revenueAcctg.htm"
+                      >Revenue Accounting</a
+                    >
+                  </td>
+                  <td>(213) 202-4383</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="operationswest/westregion/seniorservices.htm"
+                      >Senior Citizen Services</a
+                    >
+                  </td>
+                  <td>213-485-7512</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="administration/budgetandrev.htm"
+                      >Service Contracts Group
+                    </a>
+                  </td>
+                  <td>(818) 243-6421</td>
+                </tr>
+                <tr>
+                  <td><a href="figueroa/15Floor/ITsystems.htm">Systems</a></td>
+                  <td>(213) 847-0571</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <a href="operationseast/traveltown.htm">Travel Town</a>
+                  </td>
+                  <td>(323) 662-5874</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="operationseast/golf.htm#tregnangolf"
+                      >Tregnan Golf</a
+                    >
+                  </td>
+                  <td>(323) 906-3858</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="http://rapintra.ci.la.ca.us/volunteer/index.htm"
+                      >Volunteer Information</a
+                    >
+                  </td>
+                  <td>(213) 202-3222</td>
+                </tr>
+                <tr>
+                  <td>Workers' Compensation</td>
+                  <td>(213) 473-3400</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <div class="container">
+      <footer>
+        <div
+          class="row row-cols-3 py-5 my-5 border-bottom justify-content-center"
+        >
+          <div class="col-lg-3 mb-3">
+            <h6><strong>Section</strong></h6>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 mb-3">
+            <h6><strong>Section</strong></h6>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 mb-3">
+            <h6><strong>Section</strong></h6>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="text-center text-body-secondary">
+          © 2022 ABC. All rights reserved.
+        </p>
+        <ul class="nav justify-content-center list-unstyled d-flex mb-5">
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><i class="bi bi-facebook"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><i class="bi bi-twitter"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="#"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+          var value = $(this).val().toLowerCase();
+          $("#myTable tr").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+          });
+        });
+      });
+    </script>
+
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
   </body>

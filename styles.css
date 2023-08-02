@@ -1,4 +1,4 @@
-body{
+body {
   font-family: "Inter", sans-serif;
   /* background-image: url('assets/stacked-waves-haikei.svg');
   position: relative;
@@ -12,18 +12,17 @@ a[href$=".pdf"] {
   padding-left: 25px;
 }
 
-.link-hover {
-  text-decoration: none;
+.link-orange_hover {
   color: #343a40;
 }
-.link-hover:hover{
+.link-orange_hover:hover {
   text-decoration: underline;
-  color:#ff5029;
+  color: #ff5029;
 }
 
-.link-orange{
-  color: #E96648;
+.link-orange {
+  color: #e96648;
 }
-.link-orange:hover{
-  color: #ff5029;
+.link-orange:hover {
+  color: #fd4117;
 }
