@@ -32,3 +32,8 @@ a[href$=".pdf"]
       background-color: #febe89;
       border-radius: 5px;
  }
+
+ a[href$=".pdf"] {
+  background: url("/assets/file-earmark-pdf-fill.svg") no-repeat left;
+  padding-left: 25px;
+}
