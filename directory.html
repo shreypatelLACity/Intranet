@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2 mt-3">
+          <div class="flex-shrink-0 p-3 bg-body-tertiary rounded-2">
+            <a
+              href="/"
+              class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom"
+            >
+              <svg class="bi pe-none me-2" width="30" height="24">
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+              <span class="fs-5 fw-semibold">Collapsible</span>
+            </a>
+            <ul class="list-unstyled ps-0">
+              <li class="mb-1">
+                <button
+                  class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#home-collapse"
+                  aria-expanded="false"
+                >
+                  Home
+                </button>
+                <div class="collapse" id="home-collapse" style="">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >Overview</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >Updates</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >Reports</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button
+                  class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#dashboard-collapse"
+                  aria-expanded="false"
+                >
+                  Dashboard
+                </button>
+                <div class="collapse" id="dashboard-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >Overview</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >Weekly</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >Monthly</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >Annually</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button
+                  class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#orders-collapse"
+                  aria-expanded="false"
+                >
+                  Orders
+                </button>
+                <div class="collapse" id="orders-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >New</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >Processed</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >Shipped</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >Returned</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="border-top my-3"></li>
+              <li class="mb-1">
+                <button
+                  class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#account-collapse"
+                  aria-expanded="false"
+                >
+                  Account
+                </button>
+                <div class="collapse" id="account-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >New...</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >Profile</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >Settings</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="link-body-emphasis d-inline-flex text-decoration-none rounded"
+                        >Sign out</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-10 mt-3 bg-body-tertiary rounded-2">
+          <div class="container-fluid py-3" id="custom-cards">
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4">
+              <div class="col">
+                <div
+                  class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                  style="
+                    background-image: url('assets/pexels-photo-2525903.jpeg');
+                  "
+                >
+                  <div
+                    class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                  >
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                      City of LA Personnel
+                    </h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img
+                          src="https://griffithobservatory.org/wp-content/uploads/2021/01/logo_la.png"
+                          alt="Bootstrap"
+                          width="32"
+                          height="32"
+                          class="rounded-circle"
+                        />
+                      </li>
+
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em">
+                          <use xlink:href="#calendar3"></use>
+                        </svg>
+                        <small>June 2, 2023</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div
+                  class="card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                  style="
+                    background-image: url('assets/pexels-photo-2525903.jpeg');
+                  "
+                >
+                  <div
+                    class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+                  >
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                      Information Regarding the Griffith Park
+                    </h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img
+                          src="assets/LAParks_Logo.png"
+                          alt="Bootstrap"
+                          width="32"
+                          height="32"
+                          class="rounded-circle"
+                        />
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em">
+                          <use xlink:href="#calendar3"></use>
+                        </svg>
+                        <small>July 2, 2023</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div
+                  class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                  style="
+                    background-image: url('assets/pexels-photo-2525903.jpeg');
+                  "
+                >
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                      MBE/WBE and Other Business
+                    </h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img
+                          src="assets/LAParks_Logo.png"
+                          alt="Bootstrap"
+                          width="32"
+                          height="32"
+                          class="rounded-circle"
+                        />
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em">
+                          <use xlink:href="#calendar3"></use>
+                        </svg>
+                        <small>July 15, 2023</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container py-2 mt-5">
+            <ul class="nav nav-underline" id="myTab" role="tablist">
+              <li class="nav-item me-2" role="presentation">
+                <button
+                  class="nav-link link-orange active"
+                  id="home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#home-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="home-tab-pane"
+                  aria-selected="true"
+                >
+                  <i class="bi bi-folder2-open me-2"></i>Directory
+                </button>
+              </li>
+              <li class="nav-item me-2" role="presentation">
+                <button
+                  class="nav-link link-orange"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#profile-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="profile-tab-pane"
+                  aria-selected="false"
+                >
+                  <i class="bi bi-card-checklist me-2"></i>Applications
+                </button>
+              </li>
+              <li class="nav-item me-2" role="presentation">
+                <button
+                  class="nav-link link-orange"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#contact-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="contact-tab-pane"
+                  aria-selected="false"
+                >
+                  <i class="bi bi-file-earmark-pdf me-2"></i>eForms
+                </button>
+              </li>
+              <li class="nav-item me-2" role="presentation">
+                <button
+                  class="nav-link link-orange"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#contact-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="contact-tab-pane"
+                  aria-selected="false"
+                >
+                  <i class="bi bi-info-circle me-2"></i>Information
+                </button>
+              </li>
+              <li class="nav-item me-2" role="presentation">
+                <button
+                  class="nav-link link-orange"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#contact-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="contact-tab-pane"
+                  aria-selected="false"
+                >
+                  <i class="bi bi-file-binary me-2"></i>Codes
+                </button>
+              </li>
+              <li class="nav-item me-2" role="presentation">
+                <button
+                  class="nav-link link-orange"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#contact-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="contact-tab-pane"
+                  aria-selected="false"
+                >
+                  <i class="bi bi-people me-2"></i>Human Resources
+                </button>
+              </li>
+              <li class="nav-item me-2" role="presentation">
+                <button
+                  class="nav-link link-orange"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#contact-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="contact-tab-pane"
+                  aria-selected="false"
+                >
+                  <i class="bi bi-laptop me-2"></i>New Website Review
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content bg-body-secondary" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="home-tab-pane"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+                tabindex="0"
+              >
+                <table class="table table-borderless table-striped">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <a href="directory.html" class="link-dark"
+                          >General Telephone Directory</a
+                        >
+                      </td>
+                      <td><a href="" class="link-dark">Operation Branch</a></td>
+                      <td><a href="" class="link-dark">Operation Branch</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="" class="link-dark">Operation Branch</a></td>
+                      <td><a href="" class="link-dark">Operation Branch</a></td>
+                      <td><a href="" class="link-dark">Operation Branch</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="" class="link-dark">Operation Branch</a></td>
+                      <td><a href="" class="link-dark">Operation Branch</a></td>
+                      <td><a href="" class="link-dark">Operation Branch</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="profile-tab-pane"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+                tabindex="0"
+              >
+                <table class="table table-borderless table-striped">
+                  <tbody>
+                    <tr>
+                      <td><a href="" class="link-dark">Operation Branch</a></td>
+                      <td><a href="" class="link-dark">Operation Branch</a></td>
+                      <td><a href="" class="link-dark">Operation Branch</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="" class="link-dark">Operation Branch</a></td>
+                      <td><a href="" class="link-dark">Operation Branch</a></td>
+                      <td><a href="" class="link-dark">Operation Branch</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="" class="link-dark">Operation Branch</a></td>
+                      <td><a href="" class="link-dark">Operation Branch</a></td>
+                      <td><a href="" class="link-dark">Operation Branch</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="contact-tab-pane"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+                tabindex="0"
+              >
+                <table class="table table-borderless table-striped">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <a href=".pdf" class="link-dark me-2"
+                          >Operation Branch</a
+                        >
+                      </td>
+                      <td>
+                        <a href=".pdf" class="link-dark me-2"
+                          >Operation Branch</a
+                        >
+                      </td>
+                      <td>
+                        <a href=".pdf" class="link-dark me-2"
+                          >Operation Branch</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href=".pdf" class="link-dark me-2"
+                          >Operation Branch</a
+                        >
+                      </td>
+                      <td>
+                        <a href=".pdf" class="link-dark me-2"
+                          >Operation Branch</a
+                        >
+                      </td>
+                      <td>
+                        <a href=".pdf" class="link-dark me-2"
+                          >Operation Branch</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href=".pdf" class="link-dark me-2"
+                          >Operation Branch</a
+                        >
+                      </td>
+                      <td>
+                        <a href=".pdf" class="link-dark me-2"
+                          >Operation Branch</a
+                        >
+                      </td>
+                      <td>
+                        <a href=".pdf" class="link-dark me-2"
+                          >Operation Branch</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="container py-5">
+            <div class="row">
+              <div class="card-group">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Important Links</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">
+                      Card subtitle
+                    </h6>
+                    <div class="card-text">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <a href="" class="link-hover"
+                            >Accounting & Purchase</a
+                          >
+                        </li>
+                        <li class="list-group-item">
+                          <a href="" class="link-hover"
+                            >Accounting & Purchase</a
+                          >
+                        </li>
+                        <li class="list-group-item">
+                          <a href="" class="link-hover"
+                            >Accounting & Purchase</a
+                          >
+                        </li>
+                        <li class="list-group-item">
+                          <a href="" class="link-hover"
+                            >Accounting & Purchase</a
+                          >
+                        </li>
+                        <li class="list-group-item">
+                          <a href="" class="link-hover"
+                            >Accounting & Purchase</a
+                          >
+                        </li>
+                        <li class="list-group-item">
+                          <a href="" class="link-hover"
+                            >Accounting & Purchase</a
+                          >
+                        </li>
+                        <li class="list-group-item">
+                          <a href="" class="link-hover"
+                            >Accounting & Purchase</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Mainframe Support</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">
+                      Card subtitle
+                    </h6>
+                    <div class="card-text">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <a href="" class="link-hover"
+                            >Accounting & Purchase</a
+                          >
+                        </li>
+                        <li class="list-group-item">
+                          <a href="" class="link-hover"
+                            >Accounting & Purchase</a
+                          >
+                        </li>
+                        <li class="list-group-item">
+                          <a href="" class="link-hover"
+                            >Accounting & Purchase</a
+                          >
+                        </li>
+                        <li class="list-group-item">
+                          <a href="" class="link-hover"
+                            >Accounting & Purchase</a
+                          >
+                        </li>
+                        <li class="list-group-item">
+                          <a href="" class="link-hover"
+                            >Accounting & Purchase</a
+                          >
+                        </li>
+                        <li class="list-group-item">
+                          <a href="" class="link-hover"
+                            >Accounting & Purchase</a
+                          >
+                        </li>
+                        <li class="list-group-item">
+                          <a href="" class="link-hover"
+                            >Accounting & Purchase</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="bg-body-tertiary p-5 rounded-4">
+              <div class="d-flex flex-wrap flex-row mb-3">
+                <div class="p-1">
+                  <img
+                    src="assets/Images/rapoperations.jpg"
+                    class="rounded-3 object-fit-cover"
+                    height="100"
+                  />
+                </div>
+                <div class="p-1">
+                  <img
+                    src="assets/Images/KYCommunity.jpg"
+                    class="rounded-3 object-fit-cover"
+                    height="100"
+                  />
+                </div>
+                <div class="p-1">
+                  <img
+                    src="assets/Images/comments.jpg"
+                    class="rounded-3 object-fit-cover"
+                    height="100"
+                  />
+                </div>
+                <div class="p-1">
+                  <img
+                    src="assets/Images/SRS.jpg"
+                    class="rounded-3 object-fit-cover"
+                    height="100"
+                  />
+                </div>
+                <div class="p-1">
+                  <img
+                    src="assets/Images/manual.jpg"
+                    class="rounded-3 object-fit-cover"
+                    height="100"
+                  />
+                </div>
+                <div class="p-1">
+                  <img
+                    src="assets/Images/hiringPacket.jpg"
+                    class="rounded-3 object-fit-cover"
+                    height="100"
+                  />
+                </div>
+                <div class="p-1">
+                  <img
+                    src="assets/Images/safety.jpg"
+                    class="rounded-3 object-fit-cover"
+                    height="100"
+                  />
+                </div>
+                <div class="p-1">
+                  <img
+                    src="assets/Images/cornerstone.png"
+                    class="rounded-3 object-fit-cover"
+                    height="100"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

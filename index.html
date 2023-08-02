@@ -24,9 +24,9 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container-fluid text-center bg-body-tertiary py-2">
-      <div class="row">
-        <div class="col">
+    <div class="container-fluid bg-body-tertiary py-2">
+      <div class="row text-center">
+        <div class="col-sm-4">
           <small
             >Recreation and Parks website:
             <a href="www.laparks.org" class="text-reset"
@@ -34,7 +34,7 @@
             ></small
           >
         </div>
-        <div class="col">
+        <div class="col-sm-4">
           <small
             ><a
               href="http://rapintra.ci.la.ca.us/dir/gm_directive/gm_directive.htm"
@@ -43,7 +43,7 @@
             ></small
           >
         </div>
-        <div class="col">
+        <div class="col-sm-4">
           <small
             >City of Los Angeles website:
             <a href="www.lacity.org" class="text-reset"
@@ -54,27 +54,29 @@
       </div>
     </div>
 
-    <div class="container-fluid py-1">
+    <div class="container py-1">
       <nav class="navbar">
-        <a class="navbar-brand" href="internalPages/GeneralTelephoneDirectory.html">
-          <i class="bi bi-globe-americas"></i>
-          Intranet
+        <a class="navbar-brand" href="#">
+          <i class="bi bi-globe-americas me-1"></i>
+          Recreation and Parks Intranet
         </a>
         <div class="d-flex">
           <form class="justify-content-start">
             <div
-              class="btn-group btn-outline-secondary me-2"
+              class="btn-group btn-outline-dark me-2"
               role="group"
               aria-label="Basic example"
             >
-              <button type="button" class="btn btn-outline-secondary">
-                Left
+              <button type="button" class="btn btn-outline-dark d-inline-flex">
+                <i class="bi bi-headset me-2"></i>Support
               </button>
-              <button type="button" class="btn btn-outline-secondary">
-                Middle
+              <button type="button" class="btn btn-outline-dark d-inline-flex">
+                <i class="bi bi-tools me-2"></i>
+                CSR
               </button>
-              <button type="button" class="btn btn-outline-secondary">
-                Right
+              <button type="button" class="btn btn-outline-dark d-inline-flex">
+                <i class="bi bi-envelope-fill me-2"></i>
+                Mail
               </button>
             </div>
           </form>
@@ -87,7 +89,7 @@
               aria-label="Search"
             />
             <button
-              class="btn btn-outline-secondary"
+              class="btn btn-outline-dark"
               type="button"
               id="button-addon"
             >
@@ -98,45 +100,112 @@
       </nav>
     </div>
 
-    <div class="container col-xxl-8 px-4 py-5">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6">
-          <img
-            src="https://images.pexels.com/photos/2525903/pexels-photo-2525903.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            class="d-block mx-lg-auto img-fluid rounded-5"
-            alt="Bootstrap Themes"
-            width="700"
-            height="500"
-            loading="lazy"
-          />
+    
+
+    <div class="container-fluid py-3" id="custom-cards">
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4">
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('assets/pexels-photo-2525903.jpeg')"
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+            >
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                City of LA Personnel
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="https://griffithobservatory.org/wp-content/uploads/2021/01/logo_la.png"
+                    alt="Bootstrap"
+                    width="32"
+                    height="32"
+                    class="rounded-circle"
+                  />
+                </li>
+
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>June 2, 2023</small>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-6">
-          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-            placeholder
-          </h1>
-          <p class="lead">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-            expedita eaque enim ex praesentium placeat eos ea doloribus adipisci
-            magnam eum cupiditate iusto. Nobis est voluptatem omnis ullam, neque
-            nulla.
-          </p>
-          <div class="d-grid gap-1 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-              Primary
-            </button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
-              Default
-            </button>
+
+        <div class="col">
+          <div
+            class="card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('assets/pexels-photo-2525903.jpeg')"
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+            >
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                Information Regarding the Griffith Park
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="assets/LAParks_Logo.png"
+                    alt="Bootstrap"
+                    width="32"
+                    height="32"
+                    class="rounded-circle"
+                  />
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>July 2, 2023</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('assets/pexels-photo-2525903.jpeg')"
+          >
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                MBE/WBE and Other Business
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="assets/LAParks_Logo.png"
+                    alt="Bootstrap"
+                    width="32"
+                    height="32"
+                    class="rounded-circle"
+                  />
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>July 15, 2023</small>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container">
+    <div class="container py-2 mt-5">
       <ul class="nav nav-underline" id="myTab" role="tablist">
         <li class="nav-item me-2" role="presentation">
           <button
-            class="nav-link active"
+            class="nav-link link-orange active"
             id="home-tab"
             data-bs-toggle="tab"
             data-bs-target="#home-tab-pane"
@@ -145,12 +214,12 @@
             aria-controls="home-tab-pane"
             aria-selected="true"
           >
-            <i class="bi bi-folder me-2"></i>Directory
+            <i class="bi bi-folder2-open me-2"></i>Directory
           </button>
         </li>
         <li class="nav-item me-2" role="presentation">
           <button
-            class="nav-link"
+            class="nav-link link-orange"
             id="profile-tab"
             data-bs-toggle="tab"
             data-bs-target="#profile-tab-pane"
@@ -164,7 +233,7 @@
         </li>
         <li class="nav-item me-2" role="presentation">
           <button
-            class="nav-link"
+            class="nav-link link-orange"
             id="contact-tab"
             data-bs-toggle="tab"
             data-bs-target="#contact-tab-pane"
@@ -176,6 +245,62 @@
             <i class="bi bi-file-earmark-pdf me-2"></i>eForms
           </button>
         </li>
+        <li class="nav-item me-2" role="presentation">
+          <button
+            class="nav-link link-orange"
+            id="contact-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#contact-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="contact-tab-pane"
+            aria-selected="false"
+          >
+            <i class="bi bi-info-circle me-2"></i>Information
+          </button>
+        </li>
+        <li class="nav-item me-2" role="presentation">
+          <button
+            class="nav-link link-orange"
+            id="contact-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#contact-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="contact-tab-pane"
+            aria-selected="false"
+          >
+            <i class="bi bi-file-binary me-2"></i>Codes
+          </button>
+        </li>
+        <li class="nav-item me-2" role="presentation">
+          <button
+            class="nav-link link-orange"
+            id="contact-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#contact-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="contact-tab-pane"
+            aria-selected="false"
+          >
+            <i class="bi bi-people me-2"></i>Human Resources
+          </button>
+        </li>
+        <li class="nav-item me-2" role="presentation">
+          <button
+            class="nav-link link-orange"
+            id="contact-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#contact-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="contact-tab-pane"
+            aria-selected="false"
+          >
+            <i class="bi bi-laptop me-2"></i>New Website Review
+          </button> 
+        </li>
       </ul>
       <div class="tab-content bg-body-secondary" id="myTabContent">
         <div
@@ -185,10 +310,10 @@
           aria-labelledby="home-tab"
           tabindex="0"
         >
-          <table class="table table-sm table-borderless table-striped">
+          <table class="table table-borderless table-striped">
             <tbody>
               <tr>
-                <td><a href="" class="link-dark">Operation Branch</a></td>
+                <td><a href="directory.html" class="link-dark">General Telephone Directory</a></td>
                 <td><a href="" class="link-dark">Operation Branch</a></td>
                 <td><a href="" class="link-dark">Operation Branch</a></td>
               </tr>
@@ -212,7 +337,7 @@
           aria-labelledby="profile-tab"
           tabindex="0"
         >
-          <table class="table table-sm table-borderless table-striped">
+          <table class="table table-borderless table-striped">
             <tbody>
               <tr>
                 <td><a href="" class="link-dark">Operation Branch</a></td>
@@ -292,22 +417,25 @@
               <div class="card-text">
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">
-                    <a href="">Accounting & PurchaseSupport Use Only</a>
+                    <a href="" class="link-hover">Accounting & Purchase</a>
                   </li>
                   <li class="list-group-item">
-                    <a href="">Accounting & PurchaseSupport Use Only</a>
+                    <a href="" class="link-hover">Accounting & Purchase</a>
                   </li>
                   <li class="list-group-item">
-                    <a href="">Accounting & PurchaseSupport Use Only</a>
+                    <a href="" class="link-hover">Accounting & Purchase</a>
                   </li>
                   <li class="list-group-item">
-                    <a href="">Accounting & PurchaseSupport Use Only</a>
+                    <a href="" class="link-hover">Accounting & Purchase</a>
                   </li>
                   <li class="list-group-item">
-                    <a href="">Accounting & PurchaseSupport Use Only</a>
+                    <a href="" class="link-hover">Accounting & Purchase</a>
                   </li>
                   <li class="list-group-item">
-                    <a href="">Accounting & PurchaseSupport Use Only</a>
+                    <a href="" class="link-hover">Accounting & Purchase</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="" class="link-hover">Accounting & Purchase</a>
                   </li>
                 </ul>
               </div>
@@ -322,25 +450,25 @@
               <div class="card-text">
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">
-                    <a href="">Accounting & PurchaseSupport Use Only</a>
+                    <a href="" class="link-hover">Accounting & Purchase</a>
                   </li>
                   <li class="list-group-item">
-                    <a href="">Accounting & PurchaseSupport Use Only</a>
+                    <a href="" class="link-hover">Accounting & Purchase</a>
                   </li>
                   <li class="list-group-item">
-                    <a href="">Accounting & PurchaseSupport Use Only</a>
+                    <a href="" class="link-hover">Accounting & Purchase</a>
                   </li>
                   <li class="list-group-item">
-                    <a href="">Accounting & PurchaseSupport Use Only</a>
+                    <a href="" class="link-hover">Accounting & Purchase</a>
                   </li>
                   <li class="list-group-item">
-                    <a href="">Accounting & PurchaseSupport Use Only</a>
+                    <a href="" class="link-hover">Accounting & Purchase</a>
                   </li>
                   <li class="list-group-item">
-                    <a href="">Accounting & PurchaseSupport Use Only</a>
+                    <a href="" class="link-hover">Accounting & Purchase</a>
                   </li>
                   <li class="list-group-item">
-                    <a href="">Accounting & PurchaseSupport Use Only</a>
+                    <a href="" class="link-hover">Accounting & Purchase</a>
                   </li>
                 </ul>
               </div>
@@ -351,80 +479,110 @@
     </div>
 
     <div class="container">
-      <div class="d-flex flex-wrap flex-row mb-3">
-        <div class="p-1">
-          <img
-            src="http://rapintra.ci.la.ca.us/images/banners/resized/rapoperations.jpg"
-            class="rounded-3 object-fit-cover"
-            height="100"
-          />
-        </div>
-        <div class="p-1">
-          <img
-            src="http://rapintra.ci.la.ca.us/images/banners/resized/rapoperations.jpg"
-            class="rounded-3 object-fit-cover"
-            height="100"
-          />
-        </div>
-        <div class="p-1">
-          <img
-            src="http://rapintra.ci.la.ca.us/images/banners/resized/rapoperations.jpg"
-            class="rounded-3 object-fit-cover"
-            height="100"
-          />
-        </div>
-        <div class="p-1">
-          <img
-            src="http://rapintra.ci.la.ca.us/images/banners/resized/rapoperations.jpg"
-            class="rounded-3 object-fit-cover"
-            height="100"
-          />
-        </div>
-        <div class="p-1">
-          <img
-            src="http://rapintra.ci.la.ca.us/images/banners/resized/rapoperations.jpg"
-            class="rounded-3 object-fit-cover"
-            height="100"
-          />
-        </div>
-        <div class="p-1">
-          <img
-            src="http://rapintra.ci.la.ca.us/images/banners/resized/rapoperations.jpg"
-            class="rounded-3 object-fit-cover"
-            height="100"
-          />
-        </div>
-        <div class="p-1">
-          <img
-            src="http://rapintra.ci.la.ca.us/images/banners/resized/rapoperations.jpg"
-            class="rounded-3 object-fit-cover"
-            height="100"
-          />
-        </div>
-        <div class="p-1">
-          <img
-            src="http://rapintra.ci.la.ca.us/images/banners/resized/rapoperations.jpg"
-            class="rounded-3 object-fit-cover"
-            height="100"
-          />
-        </div>
-        <div class="p-1">
-          <img
-            src="http://rapintra.ci.la.ca.us/images/banners/resized/rapoperations.jpg"
-            class="rounded-3 object-fit-cover"
-            height="100"
-          />
+      <div class="bg-body-tertiary p-5 rounded-4">
+        <div class="d-flex flex-wrap flex-row mb-3">
+          <div class="p-1">
+            <img
+              src="assets/Images/rapoperations.jpg"
+              class="rounded-3 object-fit-cover"
+              height="100"
+            />
+          </div>
+          <div class="p-1">
+            <img
+              src="assets/Images/KYCommunity.jpg"
+              class="rounded-3 object-fit-cover"
+              height="100"
+            />
+          </div>
+          <div class="p-1">
+            <img
+              src="assets/Images/comments.jpg"
+              class="rounded-3 object-fit-cover"
+              height="100"
+            />
+          </div>
+          <div class="p-1">
+            <img
+              src="assets/Images/SRS.jpg"
+              class="rounded-3 object-fit-cover"
+              height="100"
+            />
+          </div>
+          <div class="p-1">
+            <img
+              src="assets/Images/manual.jpg"
+              class="rounded-3 object-fit-cover"
+              height="100"
+            />
+          </div>
+          <div class="p-1">
+            <img
+              src="assets/Images/hiringPacket.jpg"
+              class="rounded-3 object-fit-cover"
+              height="100"
+            />
+          </div>
+          <div class="p-1">
+            <img
+              src="assets/Images/safety.jpg"
+              class="rounded-3 object-fit-cover"
+              height="100"
+            />
+          </div>
+          <div class="p-1">
+            <img
+              src="assets/Images/cornerstone.png"
+              class="rounded-3 object-fit-cover"
+              height="100"
+            />
+          </div>
         </div>
       </div>
     </div>
 
+    <!-- <div class="container text-center">
+      <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+        <div class="col">
+          <div class="p-3 bg-warning-subtle rounded-3">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 bg-warning-subtle rounded-3">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 bg-warning-subtle rounded-3">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 bg-warning-subtle rounded-3">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 bg-warning-subtle rounded-3">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 bg-warning-subtle rounded-3">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 bg-warning-subtle rounded-3">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 bg-warning-subtle rounded-3">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 bg-warning-subtle rounded-3">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 bg-warning-subtle rounded-3">Row column</div>
+        </div>
+      </div>
+    </div> -->
+
     <div class="container">
       <footer>
         <div
-          class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-bottom text-center"
+          class="row row-cols-3 py-5 my-5 border-bottom justify-content-center"
         >
-          <div class="col-lg-4 mb-3">
-            <h5>Section</h5>
+          <div class="col-lg-3 mb-3">
+            <h6><strong>Section</strong></h6>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
@@ -446,8 +604,8 @@
             </ul>
           </div>
 
-          <div class="col-lg-4 mb-3">
-            <h5>Section</h5>
+          <div class="col-lg-3 mb-3">
+            <h6><strong>Section</strong></h6>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
@@ -469,8 +627,8 @@
             </ul>
           </div>
 
-          <div class="col-lg-4 mb-3">
-            <h5>Section</h5>
+          <div class="col-lg-3 mb-3">
+            <h6><strong>Section</strong></h6>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
