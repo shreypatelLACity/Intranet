@@ -5,575 +5,521 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon" />
     <title>Intranet | Home</title>
+    <!-- Filter -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container-fluid bg-body-tertiary py-2">
-      <div class="row text-center">
-        <div class="col-sm-4">
-          <small
-            >Recreation and Parks website:
-            <a href="www.laparks.org" class="text-reset"
-              >www.laparks.org</a
-            ></small
-          >
-        </div>
-        <div class="col-sm-4">
-          <small
-            ><a
-              href="http://rapintra.ci.la.ca.us/dir/gm_directive/gm_directive.htm"
-              class="text-reset"
-              >General Manager Directive</a
-            ></small
-          >
-        </div>
-        <div class="col-sm-4">
-          <small
-            >City of Los Angeles website:
-            <a href="www.lacity.org" class="text-reset"
-              >www.lacity.org</a
-            ></small
-          >
+    <header id="header"></header>
+
+    <main>
+      <!-- Hero - Cards -->
+      <div class="container-fluid py-3" id="custom-cards">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4">
+          <div class="col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              style="background-image: url('assets/pexels-photo-2525903.jpeg')"
+            >
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              >
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  City of LA Personnel
+                </h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img
+                      src="https://griffithobservatory.org/wp-content/uploads/2021/01/logo_la.png"
+                      alt="Bootstrap"
+                      width="32"
+                      height="32"
+                      class="rounded-circle"
+                    />
+                  </li>
+
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <small>June 2, 2023</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              style="background-image: url('assets/pexels-photo-2525903.jpeg')"
+            >
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              >
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  Information Regarding the Griffith Park
+                </h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img
+                      src="assets/LAParks_Logo.png"
+                      alt="Bootstrap"
+                      width="32"
+                      height="32"
+                      class="rounded-circle"
+                    />
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <small>July 2, 2023</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              style="background-image: url('assets/pexels-photo-2525903.jpeg')"
+            >
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  MBE/WBE and Other Business
+                </h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img
+                      src="assets/LAParks_Logo.png"
+                      alt="Bootstrap"
+                      width="32"
+                      height="32"
+                      class="rounded-circle"
+                    />
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <small>July 15, 2023</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="container py-1">
-      <nav class="navbar">
-        <a class="navbar-brand" href="#">
-          <img src="assets/RAP_Logo-black.svg" alt="Bootstrap" height="42" />
-        </a>
-        <div class="d-flex flex-wrap flex-lg-nowrap">
-          <form class="justify-content-start p-1">
-            <div
-              class="btn-group btn-outline-dark me-2"
-              role="group"
-              aria-label="Basic example"
-            >
-              <button type="button" class="btn btn-outline-dark d-inline-flex">
-                <i class="bi bi-headset me-2"></i>Support
-              </button>
-              <button type="button" class="btn btn-outline-dark d-inline-flex">
-                <i class="bi bi-tools me-2"></i>
-                CSR
-              </button>
-              <button type="button" class="btn btn-outline-dark d-inline-flex">
-                <i class="bi bi-envelope-fill me-2"></i>
-                Mail
-              </button>
-            </div>
-          </form>
-
-          <form role="search" class="input-group p-1">
-            <input
-              class="form-control"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
+      <!-- Tabs -->
+      <section class="container py-2 mt-5">
+        <ul class="nav nav-underline" id="myTab" role="tablist">
+          <li class="nav-item me-2" role="presentation">
             <button
-              class="btn btn-outline-dark"
+              class="nav-link link-orange active"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#home-tab-pane"
               type="button"
-              id="button-addon"
+              role="tab"
+              aria-controls="home-tab-pane"
+              aria-selected="true"
             >
-              <i class="bi bi-search"></i>
+              <i class="bi bi-folder2-open me-2"></i>Directory
             </button>
-          </form>
-        </div>
-      </nav>
-    </div>
-
-    <div class="container-fluid py-3" id="custom-cards">
-      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4">
-        <div class="col">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('assets/pexels-photo-2525903.jpeg')"
-          >
-            <div
-              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+          </li>
+          <li class="nav-item me-2" role="presentation">
+            <button
+              class="nav-link link-orange"
+              id="profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#profile-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="profile-tab-pane"
+              aria-selected="false"
             >
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                City of LA Personnel
-              </h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img
-                    src="https://griffithobservatory.org/wp-content/uploads/2021/01/logo_la.png"
-                    alt="Bootstrap"
-                    width="32"
-                    height="32"
-                    class="rounded-circle"
-                  />
-                </li>
-
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#calendar3"></use>
-                  </svg>
-                  <small>June 2, 2023</small>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div
-            class="card h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('assets/pexels-photo-2525903.jpeg')"
-          >
-            <div
-              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              <i class="bi bi-card-checklist me-2"></i>Applications
+            </button>
+          </li>
+          <li class="nav-item me-2" role="presentation">
+            <button
+              class="nav-link link-orange"
+              id="contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#contact-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="contact-tab-pane"
+              aria-selected="false"
             >
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                Information Regarding the Griffith Park
-              </h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img
-                    src="assets/LAParks_Logo.png"
-                    alt="Bootstrap"
-                    width="32"
-                    height="32"
-                    class="rounded-circle"
-                  />
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#calendar3"></use>
-                  </svg>
-                  <small>July 2, 2023</small>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
+              <i class="bi bi-file-earmark-pdf me-2"></i>eForms
+            </button>
+          </li>
+          <li class="nav-item me-2" role="presentation">
+            <button
+              class="nav-link link-orange"
+              id="contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#contact-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="contact-tab-pane"
+              aria-selected="false"
+            >
+              <i class="bi bi-info-circle me-2"></i>Information
+            </button>
+          </li>
+          <li class="nav-item me-2" role="presentation">
+            <button
+              class="nav-link link-orange"
+              id="contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#contact-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="contact-tab-pane"
+              aria-selected="false"
+            >
+              <i class="bi bi-file-binary me-2"></i>Codes
+            </button>
+          </li>
+          <li class="nav-item me-2" role="presentation">
+            <button
+              class="nav-link link-orange"
+              id="contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#contact-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="contact-tab-pane"
+              aria-selected="false"
+            >
+              <i class="bi bi-people me-2"></i>Human Resources
+            </button>
+          </li>
+          <li class="nav-item me-2" role="presentation">
+            <button
+              class="nav-link link-orange"
+              id="contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#contact-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="contact-tab-pane"
+              aria-selected="false"
+            >
+              <i class="bi bi-laptop me-2"></i>New Website Review
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content bg-body-secondary" id="myTabContent">
           <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('assets/pexels-photo-2525903.jpeg')"
+            class="tab-pane fade show active"
+            id="home-tab-pane"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+            tabindex="0"
           >
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                MBE/WBE and Other Business
-              </h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img
-                    src="assets/LAParks_Logo.png"
-                    alt="Bootstrap"
-                    width="32"
-                    height="32"
-                    class="rounded-circle"
-                  />
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#calendar3"></use>
-                  </svg>
-                  <small>July 15, 2023</small>
-                </li>
-              </ul>
-            </div>
+            <table class="table table-borderless table-striped">
+              <tbody>
+                <tr>
+                  <td>
+                    <a
+                      href="internalPages/GeneralTelephoneDirectory.html"
+                      class="link-dark"
+                      >General Telephone Directory</a
+                    >
+                  </td>
+                  <td>
+                    <a href="directory.html" class="link-dark">Directory</a>
+                  </td>
+                  <td><a href="" class="link-dark">Operation Branch</a></td>
+                </tr>
+                <tr>
+                  <td><a href="" class="link-dark">Operation Branch</a></td>
+                  <td><a href="" class="link-dark">Operation Branch</a></td>
+                  <td><a href="" class="link-dark">Operation Branch</a></td>
+                </tr>
+                <tr>
+                  <td><a href="" class="link-dark">Operation Branch</a></td>
+                  <td><a href="" class="link-dark">Operation Branch</a></td>
+                  <td><a href="" class="link-dark">Operation Branch</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="profile-tab-pane"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+            tabindex="0"
+          >
+            <table class="table table-borderless table-striped">
+              <tbody>
+                <tr>
+                  <td><a href="" class="link-dark">Operation Branch</a></td>
+                  <td><a href="" class="link-dark">Operation Branch</a></td>
+                  <td><a href="" class="link-dark">Operation Branch</a></td>
+                </tr>
+                <tr>
+                  <td><a href="" class="link-dark">Operation Branch</a></td>
+                  <td><a href="" class="link-dark">Operation Branch</a></td>
+                  <td><a href="" class="link-dark">Operation Branch</a></td>
+                </tr>
+                <tr>
+                  <td><a href="" class="link-dark">Operation Branch</a></td>
+                  <td><a href="" class="link-dark">Operation Branch</a></td>
+                  <td><a href="" class="link-dark">Operation Branch</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="contact-tab-pane"
+            role="tabpanel"
+            aria-labelledby="contact-tab"
+            tabindex="0"
+          >
+            <table class="table table-borderless table-striped">
+              <tbody>
+                <tr>
+                  <td>
+                    <a href=".pdf" class="link-dark me-2">Operation Branch</a>
+                  </td>
+                  <td>
+                    <a href=".pdf" class="link-dark me-2">Operation Branch</a>
+                  </td>
+                  <td>
+                    <a href=".pdf" class="link-dark me-2">Operation Branch</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href=".pdf" class="link-dark me-2">Operation Branch</a>
+                  </td>
+                  <td>
+                    <a href=".pdf" class="link-dark me-2">Operation Branch</a>
+                  </td>
+                  <td>
+                    <a href=".pdf" class="link-dark me-2">Operation Branch</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href=".pdf" class="link-dark me-2">Operation Branch</a>
+                  </td>
+                  <td>
+                    <a href=".pdf" class="link-dark me-2">Operation Branch</a>
+                  </td>
+                  <td>
+                    <a href=".pdf" class="link-dark me-2">Operation Branch</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div class="container py-2 mt-5">
-      <ul class="nav nav-underline" id="myTab" role="tablist">
-        <li class="nav-item me-2" role="presentation">
-          <button
-            class="nav-link link-orange active"
-            id="home-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#home-tab-pane"
-            type="button"
-            role="tab"
-            aria-controls="home-tab-pane"
-            aria-selected="true"
-          >
-            <i class="bi bi-folder2-open me-2"></i>Directory
-          </button>
-        </li>
-        <li class="nav-item me-2" role="presentation">
-          <button
-            class="nav-link link-orange"
-            id="profile-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#profile-tab-pane"
-            type="button"
-            role="tab"
-            aria-controls="profile-tab-pane"
-            aria-selected="false"
-          >
-            <i class="bi bi-card-checklist me-2"></i>Applications
-          </button>
-        </li>
-        <li class="nav-item me-2" role="presentation">
-          <button
-            class="nav-link link-orange"
-            id="contact-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#contact-tab-pane"
-            type="button"
-            role="tab"
-            aria-controls="contact-tab-pane"
-            aria-selected="false"
-          >
-            <i class="bi bi-file-earmark-pdf me-2"></i>eForms
-          </button>
-        </li>
-        <li class="nav-item me-2" role="presentation">
-          <button
-            class="nav-link link-orange"
-            id="contact-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#contact-tab-pane"
-            type="button"
-            role="tab"
-            aria-controls="contact-tab-pane"
-            aria-selected="false"
-          >
-            <i class="bi bi-info-circle me-2"></i>Information
-          </button>
-        </li>
-        <li class="nav-item me-2" role="presentation">
-          <button
-            class="nav-link link-orange"
-            id="contact-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#contact-tab-pane"
-            type="button"
-            role="tab"
-            aria-controls="contact-tab-pane"
-            aria-selected="false"
-          >
-            <i class="bi bi-file-binary me-2"></i>Codes
-          </button>
-        </li>
-        <li class="nav-item me-2" role="presentation">
-          <button
-            class="nav-link link-orange"
-            id="contact-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#contact-tab-pane"
-            type="button"
-            role="tab"
-            aria-controls="contact-tab-pane"
-            aria-selected="false"
-          >
-            <i class="bi bi-people me-2"></i>Human Resources
-          </button>
-        </li>
-        <li class="nav-item me-2" role="presentation">
-          <button
-            class="nav-link link-orange"
-            id="contact-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#contact-tab-pane"
-            type="button"
-            role="tab"
-            aria-controls="contact-tab-pane"
-            aria-selected="false"
-          >
-            <i class="bi bi-laptop me-2"></i>New Website Review
-          </button>
-        </li>
-      </ul>
-      <div class="tab-content bg-body-secondary" id="myTabContent">
-        <div
-          class="tab-pane fade show active"
-          id="home-tab-pane"
-          role="tabpanel"
-          aria-labelledby="home-tab"
-          tabindex="0"
-        >
-          <table class="table table-borderless table-striped">
-            <tbody>
-              <tr>
-                <td>
-                  <a
-                    href="internalPages/GeneralTelephoneDirectory.html"
-                    class="link-dark"
-                    >General Telephone Directory</a
-                  >
-                </td>
-                <td>
-                  <a href="directory.html" class="link-dark">Directory</a>
-                </td>
-                <td><a href="" class="link-dark">Operation Branch</a></td>
-              </tr>
-              <tr>
-                <td><a href="" class="link-dark">Operation Branch</a></td>
-                <td><a href="" class="link-dark">Operation Branch</a></td>
-                <td><a href="" class="link-dark">Operation Branch</a></td>
-              </tr>
-              <tr>
-                <td><a href="" class="link-dark">Operation Branch</a></td>
-                <td><a href="" class="link-dark">Operation Branch</a></td>
-                <td><a href="" class="link-dark">Operation Branch</a></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div
-          class="tab-pane fade"
-          id="profile-tab-pane"
-          role="tabpanel"
-          aria-labelledby="profile-tab"
-          tabindex="0"
-        >
-          <table class="table table-borderless table-striped">
-            <tbody>
-              <tr>
-                <td><a href="" class="link-dark">Operation Branch</a></td>
-                <td><a href="" class="link-dark">Operation Branch</a></td>
-                <td><a href="" class="link-dark">Operation Branch</a></td>
-              </tr>
-              <tr>
-                <td><a href="" class="link-dark">Operation Branch</a></td>
-                <td><a href="" class="link-dark">Operation Branch</a></td>
-                <td><a href="" class="link-dark">Operation Branch</a></td>
-              </tr>
-              <tr>
-                <td><a href="" class="link-dark">Operation Branch</a></td>
-                <td><a href="" class="link-dark">Operation Branch</a></td>
-                <td><a href="" class="link-dark">Operation Branch</a></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div
-          class="tab-pane fade"
-          id="contact-tab-pane"
-          role="tabpanel"
-          aria-labelledby="contact-tab"
-          tabindex="0"
-        >
-          <table class="table table-borderless table-striped">
-            <tbody>
-              <tr>
-                <td>
-                  <a href=".pdf" class="link-dark me-2">Operation Branch</a>
-                </td>
-                <td>
-                  <a href=".pdf" class="link-dark me-2">Operation Branch</a>
-                </td>
-                <td>
-                  <a href=".pdf" class="link-dark me-2">Operation Branch</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href=".pdf" class="link-dark me-2">Operation Branch</a>
-                </td>
-                <td>
-                  <a href=".pdf" class="link-dark me-2">Operation Branch</a>
-                </td>
-                <td>
-                  <a href=".pdf" class="link-dark me-2">Operation Branch</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href=".pdf" class="link-dark me-2">Operation Branch</a>
-                </td>
-                <td>
-                  <a href=".pdf" class="link-dark me-2">Operation Branch</a>
-                </td>
-                <td>
-                  <a href=".pdf" class="link-dark me-2">Operation Branch</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-
-    <div class="container py-5">
-      <div class="row">
-        <div class="card-group">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Important Links</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">
-                Card subtitle
-              </h6>
-              <div class="card-text">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    <a href="" class="link-orange_hover"
-                      >Accounting & Purchase</a
-                    >
-                  </li>
-                  <li class="list-group-item">
-                    <a href="" class="link-orange_hover"
-                      >Accounting & Purchase</a
-                    >
-                  </li>
-                  <li class="list-group-item">
-                    <a href="" class="link-orange_hover"
-                      >Accounting & Purchase</a
-                    >
-                  </li>
-                  <li class="list-group-item">
-                    <a href="" class="link-orange_hover"
-                      >Accounting & Purchase</a
-                    >
-                  </li>
-                  <li class="list-group-item">
-                    <a href="" class="link-orange_hover"
-                      >Accounting & Purchase</a
-                    >
-                  </li>
-                  <li class="list-group-item">
-                    <a href="" class="link-orange_hover"
-                      >Accounting & Purchase</a
-                    >
-                  </li>
-                  <li class="list-group-item">
-                    <a href="" class="link-orange_hover"
-                      >Accounting & Purchase</a
-                    >
-                  </li>
-                </ul>
+      <!-- Link Group -->
+      <section class="container py-5">
+        <div class="row">
+          <div class="card-group">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Important Links</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                  Card subtitle
+                </h6>
+                <div class="card-text">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <a href="" class="link-orange_hover"
+                        >Accounting & Purchase</a
+                      >
+                    </li>
+                    <li class="list-group-item">
+                      <a href="" class="link-orange_hover"
+                        >Accounting & Purchase</a
+                      >
+                    </li>
+                    <li class="list-group-item">
+                      <a href="" class="link-orange_hover"
+                        >Accounting & Purchase</a
+                      >
+                    </li>
+                    <li class="list-group-item">
+                      <a href="" class="link-orange_hover"
+                        >Accounting & Purchase</a
+                      >
+                    </li>
+                    <li class="list-group-item">
+                      <a href="" class="link-orange_hover"
+                        >Accounting & Purchase</a
+                      >
+                    </li>
+                    <li class="list-group-item">
+                      <a href="" class="link-orange_hover"
+                        >Accounting & Purchase</a
+                      >
+                    </li>
+                    <li class="list-group-item">
+                      <a href="" class="link-orange_hover"
+                        >Accounting & Purchase</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Mainframe Support</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">
-                Card subtitle
-              </h6>
-              <div class="card-text">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    <a href="" class="link-orange_hover"
-                      >Accounting & Purchase</a
-                    >
-                  </li>
-                  <li class="list-group-item">
-                    <a href="" class="link-orange_hover"
-                      >Accounting & Purchase</a
-                    >
-                  </li>
-                  <li class="list-group-item">
-                    <a href="" class="link-orange_hover"
-                      >Accounting & Purchase</a
-                    >
-                  </li>
-                  <li class="list-group-item">
-                    <a href="" class="link-orange_hover"
-                      >Accounting & Purchase</a
-                    >
-                  </li>
-                  <li class="list-group-item">
-                    <a href="" class="link-orange_hover"
-                      >Accounting & Purchase</a
-                    >
-                  </li>
-                  <li class="list-group-item">
-                    <a href="" class="link-orange_hover"
-                      >Accounting & Purchase</a
-                    >
-                  </li>
-                  <li class="list-group-item">
-                    <a href="" class="link-orange_hover"
-                      >Accounting & Purchase</a
-                    >
-                  </li>
-                </ul>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Mainframe Support</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                  Card subtitle
+                </h6>
+                <div class="card-text">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <a href="" class="link-orange_hover"
+                        >Accounting & Purchase</a
+                      >
+                    </li>
+                    <li class="list-group-item">
+                      <a href="" class="link-orange_hover"
+                        >Accounting & Purchase</a
+                      >
+                    </li>
+                    <li class="list-group-item">
+                      <a href="" class="link-orange_hover"
+                        >Accounting & Purchase</a
+                      >
+                    </li>
+                    <li class="list-group-item">
+                      <a href="" class="link-orange_hover"
+                        >Accounting & Purchase</a
+                      >
+                    </li>
+                    <li class="list-group-item">
+                      <a href="" class="link-orange_hover"
+                        >Accounting & Purchase</a
+                      >
+                    </li>
+                    <li class="list-group-item">
+                      <a href="" class="link-orange_hover"
+                        >Accounting & Purchase</a
+                      >
+                    </li>
+                    <li class="list-group-item">
+                      <a href="" class="link-orange_hover"
+                        >Accounting & Purchase</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div class="container">
-      <div class="bg-body-tertiary p-5 rounded-4">
-        <div class="d-flex flex-wrap flex-row mb-3">
-          <div class="p-1">
-            <img
-              src="assets/Images/rapoperations.jpg"
-              class="rounded-3 object-fit-cover"
-              height="100"
-            />
-          </div>
-          <div class="p-1">
-            <img
-              src="assets/Images/KYCommunity.jpg"
-              class="rounded-3 object-fit-cover"
-              height="100"
-            />
-          </div>
-          <div class="p-1">
-            <img
-              src="assets/Images/comments.jpg"
-              class="rounded-3 object-fit-cover"
-              height="100"
-            />
-          </div>
-          <div class="p-1">
-            <img
-              src="assets/Images/SRS.jpg"
-              class="rounded-3 object-fit-cover"
-              height="100"
-            />
-          </div>
-          <div class="p-1">
-            <img
-              src="assets/Images/manual.jpg"
-              class="rounded-3 object-fit-cover"
-              height="100"
-            />
-          </div>
-          <div class="p-1">
-            <img
-              src="assets/Images/hiringPacket.jpg"
-              class="rounded-3 object-fit-cover"
-              height="100"
-            />
-          </div>
-          <div class="p-1">
-            <img
-              src="assets/Images/safety.jpg"
-              class="rounded-3 object-fit-cover"
-              height="100"
-            />
-          </div>
-          <div class="p-1">
-            <img
-              src="assets/Images/cornerstone.png"
-              class="rounded-3 object-fit-cover"
-              height="100"
-            />
+      <!-- Image Links -->
+      <section class="container">
+        <div class="bg-body-tertiary p-5 rounded-4">
+          <div class="d-flex flex-wrap flex-row mb-3">
+            <div class="p-1">
+              <img
+                src="assets/Images/rapoperations.jpg"
+                class="rounded-3 object-fit-cover"
+                height="100"
+              />
+            </div>
+            <div class="p-1">
+              <img
+                src="assets/Images/KYCommunity.jpg"
+                class="rounded-3 object-fit-cover"
+                height="100"
+              />
+            </div>
+            <div class="p-1">
+              <img
+                src="assets/Images/comments.jpg"
+                class="rounded-3 object-fit-cover"
+                height="100"
+              />
+            </div>
+            <div class="p-1">
+              <img
+                src="assets/Images/SRS.jpg"
+                class="rounded-3 object-fit-cover"
+                height="100"
+              />
+            </div>
+            <div class="p-1">
+              <img
+                src="assets/Images/manual.jpg"
+                class="rounded-3 object-fit-cover"
+                height="100"
+              />
+            </div>
+            <div class="p-1">
+              <img
+                src="assets/Images/hiringPacket.jpg"
+                class="rounded-3 object-fit-cover"
+                height="100"
+              />
+            </div>
+            <div class="p-1">
+              <img
+                src="assets/Images/safety.jpg"
+                class="rounded-3 object-fit-cover"
+                height="100"
+              />
+            </div>
+            <div class="p-1">
+              <img
+                src="assets/Images/cornerstone.png"
+                class="rounded-3 object-fit-cover"
+                height="100"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
+    <!-- Footer -->
     <div class="container">
       <footer>
         <div
@@ -672,6 +618,14 @@
       </footer>
     </div>
 
+    <!-- Header -->
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+      });
+    </script>
+
+    <!-- Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
