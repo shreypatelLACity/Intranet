@@ -65,7 +65,7 @@ a[href$=".pdf"] {
   background-color: var(--bs-tertiary-bg);
 }
 
-/* Table view */
+/* Table*/
 tr a {
   padding-left: 5px;
   text-decoration: none;
